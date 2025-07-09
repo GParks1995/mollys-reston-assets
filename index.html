@@ -1,10 +1,225 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Molly's Reston Assets</title>
-  </head>
-  <body>
-    <h1>Molly's Reston Assets</h1>
-    <p>This is your asset library for dog report cards and web content.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Molly’s Grooming & Front Desk Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --purple: #6c51b0;
+      --cream: #fffaf5;
+      --grey: #f0f0f0;
+      --accent: #efedf9;
+      --error: #d32239;
+      --ok: #36c29a;
+      --tip: #f9efb7;
+    }
+    body { background: var(--cream); color: #232029; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; }
+    header { background: var(--purple); color: white; text-align: center; padding: 2rem 0 1.2rem 0; }
+    header img { max-width: 120px; margin-bottom: 10px; }
+    h1 { font-size: 2.3rem; margin-bottom: 0.15em; letter-spacing: -1px; }
+    .subtitle { font-size: 1.1rem; color: #e4d4ff; margin-bottom: 1em; }
+    .container { max-width: 1050px; background: white; margin: -3rem auto 2rem auto; border-radius: 18px;
+      box-shadow: 0 4px 28px 0 rgba(92, 72, 149, 0.08); padding: 2.4rem 2rem 2.4rem 2rem; border: 1px solid var(--accent);}
+    section { margin-bottom: 2.3rem; }
+    h2 { color: var(--purple); margin-bottom: 0.4em; font-size: 1.3rem; }
+    .note { background: var(--accent); border-left: 5px solid var(--purple); padding: 1em 1.3em; border-radius: 11px; margin-bottom: 1.6em;}
+    .pro-tips, .policies { background: var(--grey); border-left: 5px solid var(--purple); padding: 1em 1.3em; border-radius: 11px; font-size: 1.07em; margin-bottom: 2em; }
+    .staff { background: var(--tip); border-left: 5px solid #b19736; color: #735e23; padding: 1em 1.3em; border-radius: 11px; font-size: 1.04em; margin-bottom: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0 1.3em 0; background: var(--grey); border-radius: 10px; overflow: hidden; font-size: 1rem; }
+    th, td { padding: 0.6em 0.7em; text-align: left; }
+    th { background: var(--purple); color: white; border: none; font-weight: 600; font-size: 1.02em; }
+    tr:nth-child(even) td { background: var(--accent); }
+    ul, ol { margin-top: 0.5em; }
+    .faq-item { margin-bottom: 1.5em; padding-left: 15px; border-left: 4px solid var(--purple); background: var(--accent); border-radius: 6px; padding-top: 7px; padding-bottom: 7px; }
+    .callout { font-size: 1.09em; font-weight: 500; color: var(--purple); margin-bottom: 0.5em; }
+    .flow { margin: 0.5em 0 1.5em 0; }
+    .flow span { background: var(--accent); padding: 7px 15px; border-radius: 14px; margin-right: 10px; display: inline-block; }
+    .book-btn { background: var(--purple); color: #fff; padding: 0.95em 2.3em; border: none; border-radius: 2em; font-size: 1.08em; font-weight: 700;
+      box-shadow: 0 2px 12px 0 rgba(92, 72, 149, 0.13); transition: background 0.2s; cursor: pointer; margin: 1.3em auto 0 auto; display:block; letter-spacing: 1px;}
+    .book-btn:hover { background: #8566cb; }
+    .alert { color: var(--error); font-weight: 600;}
+    .ok { color: var(--ok); font-weight: 600;}
+    footer { background: var(--purple); color: #f9eefa; text-align: center; padding: 1.7rem 0 1.2rem 0; margin-top: 2.5rem; font-size: 1.08em;}
+    footer a { color:#e5d7fb;text-decoration:underline;}
+    @media (max-width: 800px) {
+      .container { padding: 1rem; }
+      th, td { padding: 0.45em 0.45em;}
+      h1 { font-size: 1.25rem; }
+      h2 { font-size: 1.1rem;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="https://i.ibb.co/tTm6Fp6z/02ed9d0e-f45d-4d76-9613-9444efd79a62.png" alt="Molly's Dog Care Logo">
+  <h1>Molly’s Grooming & Front Desk Guide</h1>
+  <div class="subtitle">For Team & Clients — Always Clear, Always Premium</div>
+</header>
+
+<div class="container">
+
+  <section>
+    <div class="callout">Step-by-Step Grooming Booking Process</div>
+    <div class="flow">
+      <span>1. Greet client & ask dog’s name, breed, and service needs</span>
+      <span>2. Check facility calendar for open slots</span>
+      <span>3. Use pricing sheet to quote (“Starts at $X…final price after assessment”)</span>
+      <span>4. Confirm vaccine status (Rabies, Bordetella, Distemper)</span>
+      <span>5. Add to Gingr & leave your initials in notes</span>
+      <span>6. Ask about add-ons/spa</span>
+      <span>7. Confirm with groomer for big dogs or special requests</span>
+      <span>8. Never guarantee slots unless booking now</span>
+      <span>9. Review tip, loyalty, & review programs at checkout</span>
+    </div>
+  </section>
+
+  <section class="policies">
+    <b>Key Front Desk & Staff Policies:</b>
+    <ul>
+      <li><b>Breed-Based Pricing:</b> Always quote the more expensive breed if mixed. Never promise a final price—always “starts at” language.</li>
+      <li><b>Vaccine Policy:</b> Rabies, Bordetella, Distemper required. 48-hr wait post-vaccination before any service.</li>
+      <li><b>No Waitlist in Gingr:</b> Use “Call List” for unavailable slots. Never add to waitlist.</li>
+      <li><b>Weight Policy:</b> Dogs 80+ lbs accepted case-by-case, only if regulars & groomer approves. Direct owner to email groomer.</li>
+      <li><b>Escalation:</b> Unsure? Never say “I don’t know”—always offer to check with groomer or manager and follow up.</li>
+      <li><b>Overbooking/Scheduling:</b> Always check calendar for time & weight limits before accepting requests.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What’s Included in Each Service</h2>
+    <ul>
+      <li><b>Bath & Brush:</b> Double shampoo & conditioner, tearless facial, paw/sanitary clean, blow dry, brush-out (5 min undercoat removal), paw pad shave, ear clean, nail cut.</li>
+      <li><b>Bath & Tidy:</b> All above + light body/face trim of owner’s choice, silhouette trim, sanitary clip.</li>
+      <li><b>Cut & Style:</b> All above + full haircut (per preference), extended brush-out (15 min undercoat), paw pad shave, sanitary clip.</li>
+      <li style="color:#666;"><i>Any other service is an add-on or a la carte! See below.</i></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Add-Ons, Spa Packages & Walk-In Services</h2>
+    <table>
+      <tr><th>Add-On / Spa</th><th>Description</th><th>Price</th></tr>
+      <tr><td>Paw & Nose Balm</td><td>Moisturizing grape seed oil for dry pads.</td><td>$15</td></tr>
+      <tr><td>Paw Fizz Treatment</td><td>Deep cleaning, soothes itchy feet (yeast/allergies).</td><td>$15</td></tr>
+      <tr><td>Specialty Shampoo</td><td>Medicated or upgraded (in-house or owner provided).</td><td>$15</td></tr>
+      <tr><td>Dental Care</td><td>Teeth brushing, dental gel, foam.</td><td>$20</td></tr>
+      <tr><td>Ear Plucking</td><td>Hair removal from ear canal (prevents infection).</td><td>$20</td></tr>
+      <tr><td>Gland Expression</td><td>Anal gland expression.</td><td>$20</td></tr>
+      <tr><td>Nail Grind</td><td>Nail filing add-on to bath or groom.</td><td>$20</td></tr>
+      <tr><td>Intense Coat Mask</td><td>Deep conditioning for dry/dull coats.</td><td>$20</td></tr>
+      <tr><td>Clean Face</td><td>Shaved clean face (poodles/like breeds).</td><td>$20</td></tr>
+      <tr><td>Clean Feet</td><td>Shaved clean feet (poodles/like breeds).</td><td>$25</td></tr>
+      <tr><td>Puppy Spa</td><td>Puppy shampoo/conditioner, nail grind, dental care, accessory.</td><td>$15</td></tr>
+      <tr><td>Seasonal Spa</td><td>Seasonal scented shampoo/conditioner, cologne, accessory.</td><td>$30</td></tr>
+      <tr><td>Shed-less Package</td><td>Deshed shampoo/conditioner, nail grind, dental care, cologne, accessory.</td><td>$40</td></tr>
+      <tr><td>Soothing Honey Spa</td><td>Manuka honey shampoo/conditioner, nail grind, teeth brushing, bandana.</td><td>$30</td></tr>
+      <tr><td class="alert">Skunked (REQUIRED if skunked)</td><td>Skunk removal solution, shampoo x2. No guarantee for total smell removal.</td><td>$30</td></tr>
+      <tr><td class="alert">Flea & Tick (REQUIRED if fleas)</td><td>Flea/tick shampoo and removal.</td><td>$25</td></tr>
+      <tr><td>Dematting</td><td>Shaving or dematting. $20 base, +$5/min after 20min.</td><td>$20+5/min</td></tr>
+      <tr><td>Express Fee</td><td>Last-minute/walk-in booking.</td><td>$75</td></tr>
+      <tr><td>Walk-In A La Carte</td><td>Paw balm, nail grind, dental, ear cleaning, pampered paws.</td><td>$10–$60</td></tr>
+    </table>
+    <ul>
+      <li>All dogs get double-shampooed, conditioned, and a tearless facial. Products used match coat type/condition.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Breed Pricing & Quoting</h2>
+    <table>
+      <tr>
+        <th>Breed</th>
+        <th>Bath & Brush</th>
+        <th>Bath & Tidy</th>
+        <th>Cut & Style</th>
+      </tr>
+      <tr><td>Labradoodle</td><td>$80</td><td>$110</td><td>$160</td></tr>
+      <tr><td>Goldendoodle (M)</td><td>$80</td><td>$110</td><td>$130</td></tr>
+      <tr><td>Poodle (Standard)</td><td>$100</td><td>$130</td><td>$170</td></tr>
+      <tr><td>Shih Tzu</td><td>$60</td><td>$75</td><td>$90</td></tr>
+      <tr><td>Affenpinscher</td><td>$55</td><td>$70</td><td>$90</td></tr>
+      <tr><td>Afgan Hound</td><td>$110</td><td>$130</td><td>$190</td></tr>
+      <tr><td>Airedale Terrier</td><td>$85</td><td>$100</td><td>$130</td></tr>
+      <tr><td>Akita</td><td>$120</td><td>$180</td><td>-</td></tr>
+      <tr><td>Alaskan Malamute</td><td>$150</td><td>$190</td><td>-</td></tr>
+      <tr><td>Aussiedoodle</td><td>$90</td><td>$130</td><td>$160</td></tr>
+      <tr><td>Australian Shepherd</td><td>$85</td><td>$130</td><td>-</td></tr>
+      <tr><td style="font-style:italic;">...and many more! See front desk or request digital copy for full list.</td><td></td><td></td><td></td></tr>
+    </table>
+    <div style="font-size:1em; color:#5a3d99; margin-bottom:1em;">
+      <b>Quoting Script:</b> <i>“For [breed], it starts at $X and may go up depending on size, coat, temperament, and needs. Our groomer will confirm the final price at check-in.”</i>
+    </div>
+  </section>
+
+  <section class="pro-tips">
+    <b>Molly’s Pro Tips (Staff!):</b>
+    <ul>
+      <li>Always confirm final price with groomer before client checks out—never rely only on sheet if there are any doubts.</li>
+      <li>Leave your initials in Gingr appointment notes for follow-up and accountability.</li>
+      <li>Encourage clients to pre-book (“Book your next now for a discount!”) and ask for reviews (“You get 10% off with a Google or Facebook review!”).</li>
+      <li>If you don’t know an answer: “Our groomer is the best person to answer that! Let me check and get back to you.”</li>
+      <li>For 80+ lb or reactive dogs, politely direct owner to groomer’s email.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Client FAQ</h2>
+    <div class="faq-item">
+      <b>Q: How do I know what service my dog needs?</b><br>
+      <b>A:</b> We’ll help you choose! Our team looks at your pup’s coat, preferences, and lifestyle to recommend the perfect service.
+    </div>
+    <div class="faq-item">
+      <b>Q: What’s included in a grooming appointment?</b><br>
+      <b>A:</b> Every service includes double shampoo, conditioner, tearless facial, paw/sanitary clean, blow dry, brush out, ear clean, and nail trim. Add-ons available!
+    </div>
+    <div class="faq-item">
+      <b>Q: How much will it cost?</b><br>
+      <b>A:</b> Pricing is by breed and coat. We’ll give you an estimate when you book and confirm the final price at check-in after seeing your dog.
+    </div>
+    <div class="faq-item">
+      <b>Q: Can I add special treatments?</b><br>
+      <b>A:</b> Absolutely! We offer paw balms, de-shedding, puppy spa, dental care, and more. Just ask!
+    </div>
+    <div class="faq-item">
+      <b>Q: What vaccines are required?</b><br>
+      <b>A:</b> Rabies, Bordetella, Distemper (48-hour wait after vaccine for any service).
+    </div>
+    <div class="faq-item">
+      <b>Q: Can you groom large breeds?</b><br>
+      <b>A:</b> We take dogs over 80 lbs on a case-by-case basis, if they are regular clients and comfortable with grooming. Please email our groomer for details.
+    </div>
+    <div class="faq-item">
+      <b>Q: How do I tip?</b><br>
+      <b>A:</b> Tip by card, Venmo/PayPal QR, or cash. We appreciate it!
+    </div>
+    <div class="faq-item">
+      <b>Q: How do I rebook or earn discounts?</b><br>
+      <b>A:</b> Leave us a review and get 10% off your next groom! Pre-book five appointments and your sixth is 25% off.
+    </div>
+    <div class="faq-item">
+      <b>Q: What if I have a special request or my dog has sensitivities?</b><br>
+      <b>A:</b> Let us know—our groomer will customize products and handling to suit your pup’s needs.
+    </div>
+  </section>
+
+  <section class="staff">
+    <b>Escalation & Client Communication:</b>
+    <ul>
+      <li>If you cannot answer a question: “Our groomer can best answer that. May I have your info for a callback?” Log on the Call List, fill out all client/pet info for follow-up.</li>
+      <li>Never bring a dog back unless groomer asks you to.</li>
+      <li>If client requests groomer’s number, tell them to text (not call), include their name, dog’s name, breed, and what service they want.</li>
+      <li>Push “Farewell Freshen-up” bath for boarding clients before pickup.</li>
+    </ul>
+  </section>
+
+  <a class="book-btn" href="https://mollys_restontowncenter.com" target="_blank">Book Grooming at Molly’s</a>
+</div>
+
+<footer>
+  Molly’s Dog Care &bull; <a href="https://mollys_restontowncenter.com">mollys_restontowncenter.com</a><br>
+  Every dog deserves a spa day!
+</footer>
+</body>
 </html>
+
