@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molly’s Dog Care Reston</title>
+  <meta name="description" content="Premium dog daycare, boarding and grooming in Reston. So many ways to make your dog’s day.">
+  <meta property="og:title" content="Molly’s Dog Care Reston">
+  <meta property="og:description" content="Warm, friendly and premium dog care. Daycare, boarding & grooming – all under one roof.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Primary font: Work Sans (Filson Pro alternative) -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-aR16mVka50Tzw9uQWGWpZJYG1ChcxrFAuo0xO+ogzAm8h1Hn0SI7RyhokW2N1GpSt1MSQe6r6qyHtl3NVxQA8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo">Molly’s Dog Care</div>
+      <nav>
+        <div class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-slide" style="background-image: url('assets/images/hero1.png');"></div>
+    <div class="hero-slide" style="background-image: url('assets/images/hero2.png');"></div>
+    <div class="hero-content" data-animate="fade-up">
+      <h1>So many ways to make your dog’s day</h1>
+      <p>From playful daycare to luxurious grooming and comfortable boarding, we believe every dog deserves the very best.</p>
+      <a href="services.html" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section id="services-preview">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <h2>Our Services</h2>
+        <p>Designed for every dog and every schedule</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-animate="fade-up">
+          <div class="card-icon"><i class="fa-solid fa-dog"></i></div>
+          <div class="card-title">Daycare</div>
+          <p class="card-description">Safe, supervised playgroups that nurture social skills and provide enrichment.</p>
+          <button class="btn" data-modal-target="#daycare-modal">Learn more</button>
+        </div>
+        <div class="card" data-animate="fade-up">
+          <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
+          <div class="card-title">Boarding</div>
+          <p class="card-description">Overnight suites that feel like home, complete with bedtime routines and personalized care.</p>
+          <button class="btn" data-modal-target="#boarding-modal">Learn more</button>
+        </div>
+        <div class="card" data-animate="fade-up">
+          <div class="card-icon"><i class="fa-solid fa-spa"></i></div>
+          <div class="card-title">Grooming</div>
+          <p class="card-description">Professional grooming and spa treatments to keep your pup looking and feeling fabulous.</p>
+          <button class="btn" data-modal-target="#grooming-modal">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Modals -->
+  <div class="modal" id="daycare-modal" aria-label="Daycare details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>Daycare</h3>
+      <p>Our daycare program offers structured playgroups tailored to your dog’s size and temperament. Certified staff supervise every session ensuring safety while your pup socialises, exercises and enjoys brain games. Enrichment activities like scent trails, puzzle toys and agility courses keep minds sharp and tails wagging.</p>
+    </div>
+  </div>
+  <div class="modal" id="boarding-modal" aria-label="Boarding details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>Boarding</h3>
+      <p>Your dog’s home away from home. Our boarding suites provide comfortable bedding, calming music and nightly tuck‑ins. We maintain your pup’s routine with regular meals, potty breaks and plenty of snuggles. Ask about our webcam access to check in on your furry family while you’re away.</p>
+    </div>
+  </div>
+  <div class="modal" id="grooming-modal" aria-label="Grooming details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>Grooming</h3>
+      <p>Our salon team uses gentle techniques and premium products to pamper your pet. Every service includes a double shampoo and conditioning, blow dry, brush‑out, nail trim and ear clean. Upgrades range from deshedding treatments to blueberry facials. We tailor each groom to your dog’s breed and lifestyle.</p>
+    </div>
+  </div>
+
+  <!-- About preview -->
+  <section id="about-preview">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <h2>About Us</h2>
+        <p>Neighbourhood care with a premium touch</p>
+      </div>
+      <div class="card-grid" style="align-items: center;">
+        <div class="card" data-animate="fade-left">
+          <img src="assets/images/about.png" alt="Illustration symbolising community and care" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+          <div class="card-title">Our Story</div>
+          <p class="card-description">Founded by dog lovers in Reston, Molly’s is built on trust, safety and the joy of seeing tails wag. Learn about our mission and the community we serve.</p>
+          <a href="about.html" class="btn">Meet Molly’s</a>
+        </div>
+        <div class="card" data-animate="fade-right">
+          <div class="card-title">Mission & Values</div>
+          <p class="card-description">We believe dogs deserve a social life and a safe place to thrive. Our values of trust, safety, loyalty and transparency guide every interaction with our clients and their pets.</p>
+          <p class="card-description">Read more about how we empower our team and maintain the highest standards in dog care.</p>
+          <a href="about.html#values" class="btn">Our Values</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials preview -->
+  <section id="testimonials-preview" style="background-image: url('assets/images/testimonials_bg.png'); background-size: cover; background-position: center;">
+    <div class="container" style="position: relative; z-index:1;">
+      <div class="section-title" data-animate="fade-up">
+        <h2>Happy Clients</h2>
+        <p>Hear what our community has to say</p>
+      </div>
+      <div class="testimonial-carousel">
+        <div class="testimonial-slide" data-animate="fade-up">
+          <p class="testimonial-quote">“Molly’s is like a second home for our pup. The staff know every dog by name and treat them like family.”</p>
+          <div class="testimonial-author">— Jamie &amp; Cooper</div>
+        </div>
+        <div class="testimonial-slide" data-animate="fade-up">
+          <p class="testimonial-quote">“The grooming services are top‑notch. Our dog looks fabulous after every visit and actually enjoys spa day!”</p>
+          <div class="testimonial-author">— Alex &amp; Luna</div>
+        </div>
+        <div class="testimonial-slide" data-animate="fade-up">
+          <p class="testimonial-quote">“I love being able to check in via webcam when we board our pup. It gives us peace of mind while we’re away.”</p>
+          <div class="testimonial-author">— Priya &amp; Benny</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="testimonials.html" class="btn">Read more stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section id="cta" style="background-color: var(--lavender-lab);">
+    <div class="container" style="text-align: center;" data-animate="fade-up">
+      <h2>Ready to join the pack?</h2>
+      <p>Become a member and unlock exclusive perks, discounts and priority booking.</p>
+      <a href="pricing.html" class="btn">View memberships</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2025 Molly’s Dog Care Reston. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-a9p9zIf3xa9iUIyDWyE+snC4f6ka3g0qYMW6qnNITXwb3sWio5EAebnPdkQdyCEk44m3hDpDl/PZR1LQgIl2Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-PLAKnDU5RCc03gmO5BKoY06ZSAcAZeiAhWbfl6Qx6o0v0SRmpMSn9P8S9t5fNK+oOFA+Vss/wOxEtzs2x/xc3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
