@@ -20,8 +20,8 @@
   --retriever-gold: #EAB350;        /* Highlights / buttons / icons */
   --my-dog-blue: #7B809E;           /* Subtext / links / borders */
 
-  --font-primary: 'Work Sans', sans-serif;
-  --font-secondary: 'Filson Pro', sans-serif;
+  --font-primary: 'Filson Pro', sans-serif;
+  --font-secondary: 'Work Sans', sans-serif;;
 }
 
 /* Global resets */
@@ -92,19 +92,19 @@ p {
 }
 
 .btn {
-  display: inline-block;
+  didisplay: inline-block;
   background-color: var(--retriever-gold);
   color: var(--grape-dane);
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
 .btn:hover {
   background-color: #f1c16e;
   transform: translateY(-2px);
 }
+
 
 /* Header & navigation */
 header {
@@ -123,9 +123,12 @@ header {
   padding: 1rem 0;
 }
 
-.logo {
-  font-family: var(--font-secondary);
-  font-weight: 800;
+.lobackground-color: var(--retriever-gold);
+  color: var(--grape-dane);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;weight: 800;
   font-size: 1.5rem;
   color: var(--grape-dane);
 }
@@ -455,4 +458,42 @@ footer p {
   text-align: center;
   font-size: 0.9rem;
   color: var(--pink-paw);
+}
+
+/* Premium 2025 Brand Overrides */
+:root {
+  --font-primary: 'Filson Pro', sans-serif;
+  --font-secondary: 'Work Sans', sans-serif;
+}
+
+/* Updated button styles */
+.btn {
+  background-color: var(--grape-dane);
+  color: var(--pink-paw);
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background-color: var(--pink-paw);
+  color: var(--grape-dane);
+}
+
+/* Footer styling refinements */
+footer {
+  background-color: var(--grape-dane);
+  color: var(--pink-paw);
+}
+
+footer a {
+  color: var(--pink-paw);
+}
+
+footer a:hover {
+  color: var(--retriever-gold);
+}
+
+/* Logo image adjustments */
+.logo img {
+  height: 40px;
+  width: auto;
 }
